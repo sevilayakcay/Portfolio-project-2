@@ -12,14 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Nothing+You+Could+Do&family=Rum+Raisin&display=swap" rel="stylesheet" />
   </head>
-
   <body>
     <header class="header">
-      <div class="logo">Sevilay Guns</div>
+      <a href="index.html" class="logo">Sevilay Guns</a>
       <button class="hamburger">
         <img src="./images/menu.png" alt="Menu Icon" />
       </button>
-
       <nav class="nav-bar">
         <ul class="nav-links">
           <li class="nav-item"><a href="index.html">Home</a></li>
@@ -28,7 +26,6 @@
           <li class="nav-item active"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
       <div class="drop-down">
         <a href="index.html">Home</a>
         <a href="aboutme.html">About</a>
@@ -36,41 +33,36 @@
         <a href="contact.html">Contact</a>
       </div>
     </header>
-
     <div class="banner fade-in"></div>
-
     <main class="main-content">
       <h1 class="main-title">Contact</h1>
       <p class="main-para">Have a project in mind? Let’s talk.</p>
-
       <div class="form-container">
         <form action="mailto:sevilayakcay@gmail.com" method="post" enctype="text/plain">
           <div class="form-input">
             <input type="text" id="fname" name="firstname" placeholder="Your name.." required />
           </div>
-
           <div class="form-input">
             <input type="text" id="lname" name="lastname" placeholder="Your last name.." required />
           </div>
-
           <div class="form-input">
             <textarea id="subject" name="subject" placeholder="Please write your message.." required></textarea>
           </div>
-
           <div class="submit">
             <button class="submit-btn" type="submit">Submit</button>
           </div>
         </form>
       </div>
     </main>
-
     <footer class="footer">
-      <a href="https://www.linkedin.com/in/sevilay-g-1662282a3/" target="_blank" rel="noopener noreferrer">
-        <img src="images/linkedin.png" alt="LinkedIn" width="50" height="50" />
-      </a>
-      <a href="https://github.com/sevilayakcay?tab=repositories" target="_blank" rel="noopener noreferrer">
-        <img src="images/github-png.png" alt="GitHub" width="100" height="50" />
-      </a>
+      <div class="footer-logos">
+        <a href="https://www.linkedin.com/in/sevilay-g-1662282a3/" target="_blank" rel="noopener noreferrer">
+          <img src="images/linkedin.png" alt="LinkedIn" width="40" height="40" />
+        </a>
+        <a href="https://github.com/sevilayakcay?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <img src="images/github-png.png" alt="GitHub" width="100" height="50" />
+        </a>
+      </div>
       <p>&copy;2026 Sevilay Guns. All rights reserved.</p>
     </footer>
   </body>

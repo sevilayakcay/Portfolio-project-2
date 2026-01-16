@@ -19,6 +19,7 @@ body {
     font-size: 2rem;
     font-family: Verdana, sans-serif;
     color: #495951;
+    text-decoration: none;
 }
 
 .header {
@@ -154,7 +155,7 @@ body {
     height: 100px;
     width: 45%;
     font-family: Verdana, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     background: linear-gradient(to bottom, #96bdc3, #f6fffe);
     box-shadow: 0 10px 10px #bed7d7;
     font-weight: 500;
@@ -277,29 +278,27 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: #bfcece;
     height: 200px;
     width: 100%;
-    font-size: 1rem;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.footer-logos {
+    display: flex;
     gap: 20px;
 }
 
-.footer p {
-    margin: 0;
-    font-size: 1.3rem;
-    color: #090808;
-    text-align: center;
-    font-weight: 500;
-    font-family: Verdana, sans-serif;
-    font-weight: 300;
-
+.footer a img {
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.footer a img {
-    display: flex;
-    justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.footer p {
+    font-family: Verdana, sans-serif;
+    font-size: 1.2rem;
 }
 
 .footer a img:hover,
@@ -342,25 +341,24 @@ body {
         font-size: 1.5rem;
     }
 
-    .skill-card:hover,
-    .main-para:hover,
-    .skills-title:hover {
-        transform: none;
-        box-shadow: none;
-    }
 
     .banner {
         height: 45vh;
     }
 
     .logo {
-        font-size: 1.5;
+        font-size: 1.4;
     }
 
     .skills-title {
         font-size: 1.5rem;
         width: 90%;
     }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
 }
 
 @keyframes fadeInUp {
